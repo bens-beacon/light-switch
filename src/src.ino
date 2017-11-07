@@ -20,13 +20,13 @@ int ButtonState = 0;
 void setup() 
 {
   cli();                                // deactivate Interrupts global
-                                        // sace energy
+                                        // save energy
   ADCSRA &= ~(1<<ADEN);                 // deactivate ADC
   ACSR = (1<<ACD);                      // deactivate Analog Comparator
   sei();                                // activate Interrupts global
                                         // init Pin-Change-Interrupt
   GIMSK |= (1<<PCIE);
-  PCMSK |= (1<<PCINT4);                 // Enable INT0 External Interrupt
+  PCMSK |= (1<<PCINT4);                 // enable INT0 External Interrupt
   set_sleep_mode(SLEEP_MODE_PWR_DOWN);  // Power-Down-Modus
   sei();                                // activate Interrupts global
 
@@ -47,12 +47,12 @@ void sendCommand()
   if (Button == HIGH && ButtonState == 0)     // if State Off
   {
     ButtonState = 2;
-    mySwitch.switchOn("10101", "01000"); 
+    mySwitch.switchOn("10101", "01000");     // code for device
   } 
   if (Button == HIGH && ButtonState == 1)    // if State ON
   {
     ButtonState = 3;
-    mySwitch.switchOff("10101", "01000"); 
+    mySwitch.switchOff("10101", "01000");    
   } 
   Button = digitalRead(ButtonPin); 
   if (Button == LOW && ButtonState == 2) ButtonState = 1; 
@@ -68,16 +68,4 @@ void enterSleep()
 
 // ISR for PCINT0
 ISR(PCINT0_vect){}
-
-
-
-
-
-
-
-
-
-
-
-
 
