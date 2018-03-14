@@ -1,7 +1,7 @@
 /*
-* Sourcecode for ATTiny 45
+* Sourcecode for ATTiny45
 *
-* CODEY BY BEN
+* CODE BY BEN
 */
 
 // Includes
@@ -44,15 +44,15 @@ void loop()
 void sendCommand()
 {
 
-  if (Button == HIGH && ButtonState == 0)     // if State Off
+  if (Button == HIGH && ButtonState == 0)    // if State == OFF
   {
     ButtonState = 2;
-    mySwitch.switchOn("10101", "01000");     // code for device
+    mySwitch.switchOn("10101", "01000");     // switch on
   } 
-  if (Button == HIGH && ButtonState == 1)    // if State ON
+  if (Button == HIGH && ButtonState == 1)    // if State == ON
   {
     ButtonState = 3;
-    mySwitch.switchOff("10101", "01000");    
+    mySwitch.switchOff("10101", "01000");    // switch off
   } 
   Button = digitalRead(ButtonPin); 
   if (Button == LOW && ButtonState == 2) ButtonState = 1; 
