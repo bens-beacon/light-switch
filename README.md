@@ -15,9 +15,9 @@ Strom zu sparen.
 
 ## ATTiny45 flashen
 
-... mehr dazu unter /flash
+... mehr dazu unter [flash](https://github.com/bens-beacon/light-switch/tree/master/flash)
 
 
 ## Schaltplan
 
-... findet man unter /circuit_diagramms
+... findet man unter [circuit_diagramms](https://github.com/bens-beacon/light-switch/tree/master/circuit_diagramms)
