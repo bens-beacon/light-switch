@@ -3,7 +3,7 @@
 Im Prinzip ist das nichts anderes als eine Funkfernbedienung, getarnt als Lichtschalter.
 Dieser kann ein 433Mhz Signal an eine Funksteckdose senden um diese An und Auszuschalten.
 
-## allgemeine Funktionsweise
+## Allgemeine Funktionsweise
 
 Jedes mal wenn der Taster betätigt wird, sendet der ATTiny ein Signal. 
 Abwechselnd An und Aus. In der zwischenzeit schläft er um Strom zu sparen. 
