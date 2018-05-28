@@ -1,9 +1,14 @@
-# lightswitch
+# Lichtschalter
 
-Ein kleiner Lichtschalter. Er besteht aus einem Mikrocontroller und 
-einem Taster. Jedes mal wenn der Taster betätigt wird, sendet der ATTiny
-ein Signal. Abwechselnd An und Aus. In der zwischenzeit schläft er um 
-Strom zu sparen.
+Im Prinzip ist das nichts anderes als eine Funkfernbedienung als Lichtschalter.
+Dieser kann ein 433Mhz Signal an eine Funksteckdose senden um diese An und Hauszuschalten.
+
+## allgemeine Funktionsweise
+
+Jedes mal wenn der Taster betätigt wird, sendet der ATTiny ein Signal. 
+Abwechselnd An und Aus. In der zwischenzeit schläft er um Strom zu sparen. 
+Das Signal ist ein typisches 433Mhz Signal welches verwendet wird um Funksteckdosen 
+An und Aus zuschalten.
 
 ## Vorrausetzung
 
@@ -13,11 +18,14 @@ Strom zu sparen.
 * Taster
 * 220 Ohm Widerstand
 
-## ATTiny45 flashen
+## Projektablauf
+
+Als erstes muss der Attiny mit dem Sourcecode geflash werden. Danach kann dieser verlötet und/ oder verbaut werden.
+
+### ATTiny45 flashen
 
 ... mehr dazu unter [flash](https://github.com/bens-beacon/light-switch/tree/master/flash)
 
+### Schaltplan
 
-## Schaltplan
-
-... findet man unter [circuit_diagramms](https://github.com/bens-beacon/light-switch/tree/master/circuit_diagramms)
+... mehr dazu unter [circuit_diagramms](https://github.com/bens-beacon/light-switch/tree/master/circuit_diagramms)
